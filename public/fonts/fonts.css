@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(Barlow+Semi+Condensed_400_normal.eot); /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpvgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRnfg.eot */
+    src: local('☺'),
+        url(Barlow+Semi+Condensed_400_normal.eot?#iefix) format('embedded-opentype'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpvgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRnfg.eot */
+        url(Barlow+Semi+Condensed_400_normal.woff2) format('woff2'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpvgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRneg.woff2 */
+        url(Barlow+Semi+Condensed_400_normal.woff) format('woff'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpvgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRnfA.woff */
+        url(Barlow+Semi+Condensed_400_normal.ttf) format('truetype'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpvgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRnf4CtCEs.ttf */
+        url(Barlow+Semi+Condensed_400_normal.svg#Barlow+Semi+Condensed_400_normal) format('svg'); /* http://fonts.gstatic.com/l/font?kit=wlpvgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRnfQ&skey=4fd3d18a82e3c26c&v=v14#BarlowSemiCondensed */
+}
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    font-style: italic;
+    font-weight: 400;
+    src: url(Barlow+Semi+Condensed_400_italic.eot); /* {{embedded-opentype-gf-url}} */
+    src: local('☺'),
+        url(Barlow+Semi+Condensed_400_italic.eot?#iefix) format('embedded-opentype'), /* {{embedded-opentype-gf-url}} */
+        url(Barlow+Semi+Condensed_400_italic.woff2) format('woff2'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlphgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRXfYqq.woff2 */
+        url(Barlow+Semi+Condensed_400_italic.woff) format('woff'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlphgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRXfYqs.woff */
+        url(Barlow+Semi+Condensed_400_italic.ttf) format('truetype'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlphgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRXfYqvKkkogw.ttf */
+        url(Barlow+Semi+Condensed_400_italic.svg#Barlow+Semi+Condensed_400_italic) format('svg'); /* {{svg-gf-url}} */
+}
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    font-style: italic;
+    font-weight: 600;
+    src: url(Barlow+Semi+Condensed_600_italic.eot); /* {{embedded-opentype-gf-url}} */
+    src: local('☺'),
+        url(Barlow+Semi+Condensed_600_italic.eot?#iefix) format('embedded-opentype'), /* {{embedded-opentype-gf-url}} */
+        url(Barlow+Semi+Condensed_600_italic.woff2) format('woff2'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpkgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRXfbJ3BGsl.woff2 */
+        url(Barlow+Semi+Condensed_600_italic.woff) format('woff'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpkgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRXfbJ3BGsj.woff */
+        url(Barlow+Semi+Condensed_600_italic.ttf) format('truetype'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpkgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRXfbJ3BGsgqZ6GfQ.ttf */
+        url(Barlow+Semi+Condensed_600_italic.svg#Barlow+Semi+Condensed_600_italic) format('svg'); /* {{svg-gf-url}} */
+}
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    font-style: italic;
+    font-weight: 700;
+    src: url(Barlow+Semi+Condensed_700_italic.eot); /* {{embedded-opentype-gf-url}} */
+    src: local('☺'),
+        url(Barlow+Semi+Condensed_700_italic.eot?#iefix) format('embedded-opentype'), /* {{embedded-opentype-gf-url}} */
+        url(Barlow+Semi+Condensed_700_italic.woff2) format('woff2'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpkgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRXfbITBWsl.woff2 */
+        url(Barlow+Semi+Condensed_700_italic.woff) format('woff'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpkgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRXfbITBWsj.woff */
+        url(Barlow+Semi+Condensed_700_italic.ttf) format('truetype'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpkgxjLBV1hqnzfr-F8sEYMB0Yybp0mudRXfbITBWsgqZ6GfQ.ttf */
+        url(Barlow+Semi+Condensed_700_italic.svg#Barlow+Semi+Condensed_700_italic) format('svg'); /* {{svg-gf-url}} */
+}
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    font-style: normal;
+    font-weight: 600;
+    src: url(Barlow+Semi+Condensed_600_normal.eot); /* {{embedded-opentype-gf-url}} */
+    src: local('☺'),
+        url(Barlow+Semi+Condensed_600_normal.eot?#iefix) format('embedded-opentype'), /* {{embedded-opentype-gf-url}} */
+        url(Barlow+Semi+Condensed_600_normal.woff2) format('woff2'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRfp66PBQ.woff2 */
+        url(Barlow+Semi+Condensed_600_normal.woff) format('woff'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRfp66PAw.woff */
+        url(Barlow+Semi+Condensed_600_normal.ttf) format('truetype'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRfp66PAGEii5w.ttf */
+        url(Barlow+Semi+Condensed_600_normal.svg#Barlow+Semi+Condensed_600_normal) format('svg'); /* {{svg-gf-url}} */
+}
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: url(Barlow+Semi+Condensed_700_normal.eot); /* {{embedded-opentype-gf-url}} */
+    src: local('☺'),
+        url(Barlow+Semi+Condensed_700_normal.eot?#iefix) format('embedded-opentype'), /* {{embedded-opentype-gf-url}} */
+        url(Barlow+Semi+Condensed_700_normal.woff2) format('woff2'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRfw6-PBQ.woff2 */
+        url(Barlow+Semi+Condensed_700_normal.woff) format('woff'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRfw6-PAw.woff */
+        url(Barlow+Semi+Condensed_700_normal.ttf) format('truetype'), /* http://fonts.gstatic.com/s/barlowsemicondensed/v14/wlpigxjLBV1hqnzfr-F8sEYMB0Yybp0mudRfw6-PAGEii5w.ttf */
+        url(Barlow+Semi+Condensed_700_normal.svg#Barlow+Semi+Condensed_700_normal) format('svg'); /* {{svg-gf-url}} */
+}

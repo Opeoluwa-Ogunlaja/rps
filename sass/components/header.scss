@@ -1,0 +1,75 @@
+.site-header{
+    border: 3px solid hsl(217, 16%, 45%);
+    padding: var(--space-sm) var(--space-base);
+    border-radius: .25rem;
+    justify-content: space-between;
+    align-items: center;
+    height: min-content;
+    margin-top: var(--space-xl);
+
+    .logo-container{
+        padding-left: .5rem;
+        img{
+            object-fit: contain;
+            width: 4.5rem;
+            height: 5rem;
+
+            @include mobile{
+                width: 3rem;
+                height: 4rem;
+            }
+        }
+
+        transform-origin: left;
+    }
+
+    .score-container{
+        text-align: center;
+        background-color: white;
+        padding-inline: var(--space-xl);
+        padding-block: var(--space-sm);
+        border-radius: .75rem;
+
+        @include mobile{
+            padding-inline: var(--space-xlg);
+            border-radius: .25rem;
+            padding-block: .5rem;
+        }
+        span{
+            font-size: var(--font-small);
+            letter-spacing: 1.5px;
+            color: hsl(229, 64%, 46%);
+            font-weight: 700;
+
+            @include mobile{
+                font-size: 8px;
+            }
+        }
+
+
+        h2{
+            line-height: 1;
+            font-weight: bold;
+            font-size: var(--font-big-h);
+            color: var(--dark-text-color);
+
+            @include mobile{
+                font-size: var(--font-big);
+            }
+        }
+    }
+
+    @include md{ 
+        width: 80% !important;
+    }
+    
+    @include big{
+        width: 60% !important;
+        border-radius: .75rem;
+        margin-inline: var(--space-3xl);
+    }
+
+    @include mobile{
+        width: 100%;
+    }
+}

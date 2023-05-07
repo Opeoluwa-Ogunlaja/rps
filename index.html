@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="./style.scss">  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+  <main>
+    <header class="site-header flex">
+      <div class="logo-container"><img src="images/logo-bonus.svg" alt="Logo"></div>
+      <div class="score-container grid">
+        <span class="uppercase">Score</span>
+        <h2 id="score"></h2>
+      </div>
+    </header>
+    <div class="main-content flex">
+      <section class="tabs flex">
+        <section class="tab active">
+          <div class="play_area">
+            <div class="tiles_container">
+            </div>
+          </div>
+        </section>
+        <section class="tab">
+          <div class="results_area">
+            <div class="result_container">
+              <div class="player">
+                <div id="player_choice"></div>
+                <span class="uppercase">You Picked</span>
+              </div>
+              <section class="visually-hidden result" id="eval-con">
+                <h2 id="result" class="uppercase"></h2>
+                <button class="uppercase" id="play_again_btn">Play again</button>
+              </section>
+              <div class="com">
+                <div id="com_choice"></div>
+                <span class="uppercase">The House Picked</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <div class="rules-btn__container"><button class="rules-btn uppercase" id="rules-modal-toggler" data-toggle="modal">Rules</button></div>
+    </div>
+    <dialog class="rules-modal" id="rules-modal">
+      <header class="flex">
+        <h2 class="uppercase">Rules</h2>
+        <button class="modal-close-btn"><img src="/images/icon-close.svg" alt="Close icon"></button>
+      </header>
+      <div>
+        <img src="/images/image-rules-bonus.svg" alt="Rules image">
+      </div>
+    </dialog>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Opeoluwa-Ogunlaja">Opeoluwa Ogunlaja</a>.
+  </div>
+
+  <script src="main.js" type="module"></script>
+</body>
+</html>

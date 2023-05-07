@@ -1,0 +1,27 @@
+.rules-btn__container{
+    .rules-btn{
+        padding-block:  var(--space-norm);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-inline: var(--space-xl);
+        border: 2px solid hsl(217, 16%, 45%);
+        border-radius: .5rem;
+        color: white;
+        letter-spacing: 2px;
+        font-size: medium;
+
+        @include mobile{
+            margin-bottom: var(--space-2xl);
+            padding-block:  var(--space-norm);
+            padding-inline: var(--space-xl);
+        }
+    }
+
+    @include big{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin: var(--space-xl);
+    }
+}
