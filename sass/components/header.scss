@@ -6,6 +6,8 @@
     align-items: center;
     height: min-content;
     margin-top: var(--space-xl);
+    z-index: 100;
+    position: relative;
 
     .logo-container{
         padding-left: .5rem;
