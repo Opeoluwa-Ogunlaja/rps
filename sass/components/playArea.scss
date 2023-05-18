@@ -329,7 +329,7 @@
             &.winner{
                 &::after{
                     position: absolute;
-                    z-index: -1;
+                    z-index: -10;
                     width: 14rem;
                     aspect-ratio: 1 / 1;
                     content: '';

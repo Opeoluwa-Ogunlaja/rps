@@ -61,7 +61,7 @@ body{
     width: 100vw;
     height: 100vh;
     height: 100dvh;
-    overflow-x: hidden;
+    overflow: hidden;
     scroll-behavior: smooth;
     isolation: isolate;
     background: var(--background-grad);
@@ -73,7 +73,7 @@ main{
     width: 100%;
     overflow-y: auto;
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     display: grid;
     justify-items: center;
     align-content: start;

@@ -2,7 +2,7 @@
     flex: 1 1 auto;
     position: relative;
     width: 100%;
-    overflow: hidden;
+    isolation: isolate;
 
     .tab{
         position: absolute;
@@ -21,7 +21,7 @@
             opacity: 1;
             visibility: visible;
             translate: 0; 
-            clip-path: inset(0 0 0 0);
+            clip-path: inset(-100% -100% 0 -100%);
         }
     }
 }
