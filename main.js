@@ -19,7 +19,13 @@ const rpsls = [scissors, spock, paper, lizard, rock]
 const container = document.querySelector('.tiles_container')
 
 // const game = new Game(container, rps)
-const game = new Game(container, rpsls)
+const game = new Game({ 
+    container, 
+    results_con: document.getElementById('eval-con'),
+    result_statement: document.getElementById('result'),
+    comChoiceCon: document.getElementById('com_choice'),
+    p1ChoiceCon: document.getElementById('player_choice')
+}, rpsls)
 
 
 window.onload = function(){

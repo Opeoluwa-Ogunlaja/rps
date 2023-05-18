@@ -324,21 +324,35 @@
 
         & > div{
             order: 1;
+            position: relative;
             
             &.winner{
-                &::before{
+                &::after{
                     position: absolute;
                     z-index: -1;
-                    width: 300%;
+                    width: 14rem;
                     aspect-ratio: 1 / 1;
                     content: '';
-                    background: radial-gradient(hsl(214, 47%, 23%) 20%, lighten(hsl(214, 47%, 23%), 20) 21%, lighten(hsl(214, 47%, 2%), 11) 41%, lighten(hsl(237, 49%, 15%), 5) 61%, hsl(237, 49%, 15%) 81%);
+                    inset: 0;
+                    background-color: black;
                     border-radius: 9999px;
-                    translate: -33% -33%;
+                    translate: 0 0;
+                    box-shadow: 
+                        0 0 0 12rem transparentize(hsl(217, 16%, 45%), .6),
+                        0 0 0 9rem transparentize(hsl(217, 16%, 45%), .4),
+                        0 0 0 6rem transparentize(hsl(217, 16%, 45%), .2),
+                        0 0 0 3rem transparentize(hsl(217, 16%, 45%), .1),
+                    ;
 
                     @include mobile{
-                        width: 250%;
-                        translate: -30% -30%;
+                        translate: 0 0;
+                        width: 6.5rem;
+                        box-shadow: 
+                            0 0 0 8rem hsla(214, 47%, 23%, .5),
+                            0 0 0 6rem hsla(214, 47%, 23%, .6),
+                            0 0 0 4rem hsla(214, 47%, 23%, .7),
+                            0 0 0 2rem hsla(214, 47%, 23%, .8),
+                        ;
                     }
                 }
             }
@@ -361,6 +375,8 @@
         }
 
         .tile{
+            // display: none !important;
+            // opacity: .1;
             button{
                 position: unset;
                 width: 6.5rem;

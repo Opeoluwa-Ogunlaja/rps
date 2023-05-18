@@ -2,8 +2,12 @@ import { setLocalStorageValue } from "./utils";
 import { setTab } from "./utils/tabHelpers";
 
 class Game{
-    constructor(container, elements){
+    constructor({ container, result_statement, results_con, comChoiceCon, p1ChoiceCon }, elements){
         this.elements = elements
+        this.result_statement = result_statement
+        this.results_con = results_con
+        this.comChoiceCon = comChoiceCon
+        this.p1ChoiceCon = p1ChoiceCon
 
         this.elements.forEach(element => element.game = this)
         this.gameArea = container;
@@ -20,8 +24,8 @@ class Game{
     disableAll = () => this.elements.forEach(element => element.disable())
 
     showMessage = (message) => {
-        let results_con = document.getElementById('eval-con')
-        let result_statement = document.getElementById('result')
+        let results_con = this.results_con
+        let result_statement = this.result_statement
         result_statement.innerText = message;
         results_con.classList.remove('visually-hidden')
     }
@@ -35,11 +39,11 @@ class Game{
                 setLocalStorageValue('score', (score) => {
                     return score + 1
                 })
-                document.getElementById('player_choice').classList.add('winner')
+                this.p1ChoiceCon.classList.add('winner')
                 this.showMessage('You win')
                 break;
             case false:
-                document.getElementById('com_choice').classList.add('winner')
+                this.comChoiceCon.classList.add('winner')
                 this.showMessage('You Lose');
                 break;
         }
@@ -51,7 +55,7 @@ class Game{
         this.computerChoice = com_choice.name
 
         const renderCom = () => {
-            document.getElementById('com_choice').insertAdjacentElement('afterbegin', com_choice.render().cloneNode(true))
+            this.comChoiceCon.insertAdjacentElement('afterbegin', com_choice.render().cloneNode(true))
         }
 
         setTimeout(() => {
@@ -66,7 +70,7 @@ class Game{
 
         const choice_elem = this.getTile(name).element.innerHTML
 
-        document.getElementById('player_choice').innerHTML = `<div class="tile"><button class="${this.choice}">` + choice_elem + '</button></div>'
+        this.p1ChoiceCon.innerHTML = `<div class="tile"><button class="${this.choice}">` + choice_elem + '</button></div>'
         setTimeout(() => setTab(2), 300)
         this.disableAll()
         this.AIPlay()
@@ -76,11 +80,11 @@ class Game{
         setTab(1)
         this.choice = null
         this.computerChoice = null
-        document.getElementById('com_choice').innerHTML = ''
-        document.getElementById('player_choice').innerHTML = ''
-        document.getElementById('player_choice').classList.remove('winner')
-        document.getElementById('com_choice').classList.remove('winner')
-        document.getElementById('eval-con').className = 'visually-hidden result'
+        this.comChoiceCon.innerHTML = ''
+        this.p1ChoiceCon.innerHTML = ''
+        this.p1ChoiceCon.classList.remove('winner')
+        this.comChoiceCon.classList.remove('winner')
+        this.results_con.className = 'visually-hidden result'
         this.enableAll()
         this.renderElements()
     }
