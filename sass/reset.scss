@@ -78,11 +78,6 @@ main{
     justify-items: center;
     align-content: start;
     grid-template-rows: min-content 1fr;
-    padding-inline: var(--site-padding);
-
-    @include mobile{
-        padding-inline: unset;
-    }
 }
 
 .main-content{
@@ -90,8 +85,13 @@ main{
     width: 100%;
     flex-direction: column;
     align-items: center;
+    padding-inline: var(--site-padding);
     gap: var(--space-norm);
     min-height: max-content;
+
+    @include mobile{
+        padding-inline: unset;
+    }
 }
 
 img{

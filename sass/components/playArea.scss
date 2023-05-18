@@ -327,6 +327,24 @@
             position: relative;
             
             &.winner{
+                &::before{
+                    position: absolute;
+                    z-index: -10;
+                    width: 330%;
+                    aspect-ratio: 1 / 1;
+                    content: '';
+                    inset: 0;
+                    background-color: #1f2a4a;
+                    border-radius: 9999px;
+                    translate: -35% -35%;
+                    
+
+                    @include mobile{
+                        translate: -33% -33%;
+                        width: 300%;
+                    }
+                }
+
                 &::after{
                     position: absolute;
                     z-index: -10;
@@ -334,24 +352,20 @@
                     aspect-ratio: 1 / 1;
                     content: '';
                     inset: 0;
-                    background-color: black;
+                    background-color: transparent;
                     border-radius: 9999px;
                     translate: 0 0;
                     box-shadow: 
-                        0 0 0 12rem transparentize(hsl(217, 16%, 45%), .6),
-                        0 0 0 9rem transparentize(hsl(217, 16%, 45%), .4),
-                        0 0 0 6rem transparentize(hsl(217, 16%, 45%), .2),
-                        0 0 0 3rem transparentize(hsl(217, 16%, 45%), .1),
+                        0 0 0 6rem hsla(227, 33%, 24%, .6),
+                        0 0 0 10rem hsla(224, 37%, 22%, .6)
                     ;
 
                     @include mobile{
                         translate: 0 0;
                         width: 6.5rem;
                         box-shadow: 
-                            0 0 0 8rem hsla(214, 47%, 23%, .5),
-                            0 0 0 6rem hsla(214, 47%, 23%, .6),
-                            0 0 0 4rem hsla(214, 47%, 23%, .7),
-                            0 0 0 2rem hsla(214, 47%, 23%, .8),
+                            0 0 0 2rem hsla(227, 33%, 24%, .6),
+                            0 0 0 4rem hsla(224, 37%, 22%, .6)
                         ;
                     }
                 }
